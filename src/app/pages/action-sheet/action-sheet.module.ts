@@ -7,13 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { ActionSheetPageRoutingModule } from './action-sheet-routing.module';
 
 import { ActionSheetPage } from './action-sheet.page';
+import { HeaderComponent } from 'src/app/components/header/header.component';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ActionSheetPageRoutingModule
+    ActionSheetPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ActionSheetPage]
 })
